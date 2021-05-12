@@ -40,7 +40,6 @@ export default function CurrencyItem(item, stl_t){
             </View>
 
         </SafeAreaView>
-
     );
 };
 
