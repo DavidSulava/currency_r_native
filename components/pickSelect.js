@@ -26,11 +26,11 @@ const PickSelect = ({ items, icon, styleInput, styleDrDown, onValueChange, place
 		const drDownColor = styleDrDown && styleDrDown.textColor || stlEditable.inputColor;
 		const drDownFSize = styleDrDown && styleDrDown.fontSize || stlEditable.fSize;
 		const txtSelected = styleDrDown && styleDrDown.textSelected || stlEditable.selected;
-		const font 				= styleDrDown && styleDrDown.font || stlEditable.font;
+		const font        = styleDrDown && styleDrDown.font || stlEditable.font;
 		const drBackColor = styleDrDown && styleDrDown.background || stlEditable.dropDownBackground;
 		const dtItemHeight= inputFSize.fontSize + 25;
 
-		const [selectItems] 				= useState( items || [{ label: placeholder || '', value: '' }] );
+		const [selectItems]         = useState( items || [{ label: placeholder || '', value: '' }] );
 		const [initVal, setInitVal] = useState( selectItems[0] );
 		const [showDropD, setShowD] = useState(false);
 
